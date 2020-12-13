@@ -1,0 +1,21 @@
+h1   #{title}
+  form(action='/train' method='POST')
+    |from: 
+    input(type='text' name='from')
+    br
+    |to: 
+    input(type='text' name='to')
+    br    
+    |trainName: 
+    input(type='text' name='trainName')    
+    br
+    |trainNumber: 
+    input(type='Number' name='trainNumber')
+    br
+    |NumberofTickets: 
+    input(type='Number' name='trainTickets')    
+    //- br
+    //- |Date: 
+    //- input(type='date' name='Date')    
+    br
+    input(type='submit' value='Submit')

@@ -10,7 +10,7 @@ require("./Train")
 var trainModel =mongoose.model("Train");
 
 
-mongoose.connect("mongodb+srv://WorkSpace:qwerty@12345@cluster0.wq4v4.mongodb.net/<dbname>?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(give your mongo db address, {useNewUrlParser: true, useUnifiedTopology: true});
 const connection = mongoose.connection;
 connection.once('open',() =>
 {

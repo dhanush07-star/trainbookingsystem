@@ -73,7 +73,7 @@ app.post("/valid",urlencodedParser,(req,res) =>
             doc.trainTickets = doc.trainTickets - qtty;
             doc.save();
             bookingdoc.save();
-            res.send("bokking is done bro!!!")
+            res.send("booking is done!!!")
         }else{
             res.send("train not found")
             return 
